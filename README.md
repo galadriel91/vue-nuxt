@@ -1,35 +1,63 @@
-#### Nuxt 프레임 워크를 써보았습니다.
+# Nuxt 3 Minimal Starter
 
-##### 기존 포트폴리오 사이트인 http://galadriel91.cafe24.com/main/index.html 를 Nuxt를 이용하여 바꿔 보았습니다.
-데모 id : 123@123 , password:123
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Setup
+
+Make sure to install the dependencies:
+
+```bash
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
 ```
-퍼블리싱 작업도 Nuxt를 이용할 때가 더 편했던 것 같다. 왜냐하면 각각의 컴포넌트 마다 
-스타일 SCOPE가 있어서 클래스명을 중복으로 써도 상관없었기 때문입니다. 
-그리고 기존 포트폴리오 사이트에는 없었던 기능들을 추가 하였습니다. 
-다만 실제 서버나 데이터베이스는 없기 때문에 저장은 되지 않습니다.
-추후 여유가 있다면 노드와 db를 배워서 연결하고 싶습니다.
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
 ```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
 ```
-1. 로그인과 회원가입 로그아웃을 구현해 보았습니다.
-	- Vuex를 이용하여 임시로 데이터를 보관하기 때문에 로그아웃하면 데이터가 사라집니다.
-	- 로그인 기능은 데이터를 보관할 수 없기 때문에 아무 이메일 비밀번호를 넣어도 상관없습니다.
-	- 로그인 기능시 닉네임은 '반지원정대'로 고정입니다.
-	- 회원가입은 회원가입시 적은 닉네임을 사용할 수 있습니다.
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
 ```
-```
-2. 프로필 기능을 구현해 보았습니다.
-	- 프로필에는 아바타의 색깔과 닉네임을 변경 할 수 있습니다.
-	- 만약 제가 작업한 포트폴리오에 별점을 주었다면 , 
-	  프로필에서 확인할 수 있고, 별점 삭제도 가능합니다.
-```
-```
-3. 포트폴리오 아이템에 별점과 댓글 기능을 추가했습니다.
-	- 로그인을 하지않았을 경우에는 프로필에 접근하지 못하기 때문에 
-	  별점 저장은 되지만 , 전체적으로 관리는 할 수 없습니다.
-	- 로그인을 하지않았을 경우 , 댓글을 누를때마다 닉네임을 설정할 수 있습니다.
-	- 로그인을 하지않았을 경우 , 아바타 색깔은 바꿀 수 없습니다.
-	- 로그인이나 회원가입을 하였을때는 처음 설정한 닉네임이 고정으로 들어갑니다.
-	  프로필에서 닉네임이나 아바타 색깔을 바꿀 경우 적용이 바로 됩니다.
-```
-	
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
